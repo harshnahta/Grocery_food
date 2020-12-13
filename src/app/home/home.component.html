@@ -1,0 +1,939 @@
+<section class="carousel-slider-main text-center border-top border-bottom bg-white">
+   <owl-carousel-o [options]="customOptions1">
+ 
+      <ng-container *ngFor="let slide of bannerList">
+        <ng-template carouselSlide [id]="slide.CategoryID">
+          <img class="caroselMain" [src]="slide.Banner_Image" [alt]="slide.Banner_Title" [title]="slide.Banner_Title">
+        </ng-template>
+      </ng-container>
+   
+    </owl-carousel-o>
+   <!-- <div class="owl-carousel owl-carousel-slider">
+      <div *ngFor="let slide of bannerList" class="item">
+         <a href="shop.html"><img class="img-fluid" [src]="slide.Banner_Image" [alt]="slide.Banner_Title"></a>
+      </div>
+      <div class="item">
+         <a href="shop.html"><img class="img-fluid" src="../../assets/img/slider/slider2.jpg" alt="First slide"></a>
+      </div>
+      <div class="item">
+         <a href="shop.html"><img class="img-fluid" src="../../assets/img/slider/slider1.jpg" alt="First slide"></a>
+      </div>
+      <div class="item">
+         <a href="shop.html"><img class="img-fluid" src="../../assets/img/slider/slider1.jpg" alt="First slide"></a>         
+      </div>
+   </div> -->
+</section>
+<section class="top-category section-padding">
+   <div class="container">
+   <owl-carousel-o [options]="customOptions">
+ 
+      <ng-container  *ngFor="let slide of categoryList">
+        <ng-template  carouselSlide [id]="slide.CategoryID">
+        <img class="imageRound rounded" onMouseOver="this.style.opacity=0.4" onMouseOut="this.style.opacity=1"  [src]="slide.Category_Image" [alt]="slide.Category_Description" [title]="slide.Category_Description">
+          <h6 >{{slide.Category_Name}}</h6>
+          <p>{{slide.Category_Description}}</p>
+        </ng-template>
+      </ng-container>
+   
+    </owl-carousel-o>
+   </div>
+   <!-- <div class="container">
+      <div class="owl-carousel owl-carousel-category">
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/1.jpg" alt="">
+                  <h6>Fruits & Vegetables</h6>
+                  <p>150 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/2.jpg" alt="">
+                  <h6>Grocery & Staples</h6>
+                  <p>95 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/3.jpg" alt="">
+                  <h6>Beverages</h6>
+                  <p>65 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/4.jpg" alt="">
+                  <h6>Home & Kitchen</h6>
+                  <p>965 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/5.jpg" alt="">
+                  <h6>Furnishing & Home Needs</h6>
+                  <p>125 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/6.jpg" alt="">
+                  <h6>Household Needs</h6>
+                  <p>325 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/7.jpg" alt="">
+                  <h6>Personal Care</h6>
+                  <p>156 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/8.jpg" alt="">
+                  <h6>Breakfast & Dairy</h6>
+                  <p>857 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/9.jpg" alt="">
+                  <h6>Biscuits, Snacks & Chocolates</h6>
+                  <p>48 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/10.jpg" alt="">
+                  <h6>Noodles, Sauces & Instant Food</h6>
+                  <p>156 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/11.jpg" alt="">
+                  <h6>Pet Care</h6>
+                  <p>568 Items</p>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="category-item">
+               <a href="shop.html">
+                  <img class="img-fluid" src="../../assets/img/small/12.jpg" alt="">
+                  <h6>Meats, Frozen & Seafood</h6>
+                  <p>156 Items</p>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div> -->
+</section>
+
+<section  class="product-items-slider section-padding">
+   <div class="container">
+      <div class="section-header">
+         <h5 class="heading-design-h5">Products
+            <!-- <span class="badge badge-primary">20% OFF</span> -->
+            <a class="float-right text-secondary" href="shop.html">View All</a>
+         </h5>
+      </div>
+   </div>
+      <div class="container">
+      <owl-carousel-o  [options]="customOptions2" >
+      <ng-container  *ngFor="let slide of ProductsListsOfall">
+         <ng-template  carouselSlide [id]="slide.CategoryID">
+            <div class="product" style="max-width: 220px !important;">
+               <a >
+         <div class="product-header">
+            <span class="badge badge-success">50% OFF</span>
+            <img style="max-width: 200px !important;" (error)=error(slide) onMouseOver="this.style.opacity=0.4" onMouseOut="this.style.opacity=1"  [src]="slide.Product_Image" [alt]="slide.Category_Description" [title]="slide.Category_Description">
+            <!-- <img class="img-fluid" src="../../assets/img/item/1.jpg" alt=""> -->
+            <span class="veg text-success mdi mdi-circle"></span>
+         </div>
+         <div class="product-body">
+            <h5>{{slide.Product_MetaTitle}}</h5>
+            <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+         </div>
+         <div class="qnty-selection">
+            <div class="btn-group btn-input">
+               <span class="">
+               <button type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-caret-down"></i> 
+                  <span data-bind="label">
+                  <!-- <span class="">1 kg</span>  -->
+                  <span class="">{{slide.Product_SKU}}</span> - Rs 
+                  <span class="">{{slide.Product_SalePrice}}</span>
+               </span>
+               </button>
+                  <ul class="dropdown-menu drop-select">
+                           <li  class="ng-scope">
+                              <a href="#" style="text-decoration: none;">
+                              <span class="">1 kg</span> 
+                              <span class="">Pouch</span> - Rs 
+                              <span class="">115.00</span> 
+                              </a>
+                           </li>
+                     <li  class="ng-scope">
+                        <a href="#" style="text-decoration: none;">
+                        <span class="">500 g</span> 
+                        <span class="">Pouch</span> - Rs 
+                        <span class="">60.00</span> 
+                        </a>
+                     </li>
+                  </ul>
+               </span>
+            </div>
+         </div>
+         <div class="add-bskt">
+            <div class="elements">
+               <div qa="price" class="po-markup">
+                  <h5 class="po-link-addr ng-scope" data-original-title="" title="" >
+                     <span class="ng-binding">MRP: </span>
+                  </h5>
+                  <h4>
+                     <span class="mp-price ng-scope" >Rs 
+                        <span class="">{{slide.Product_MRP}}</span>
+                     </span>
+                     <span class="discnt-price"> Rs 
+                        <span class="ng-binding">{{slide.Product_SalePrice}}</span>
+                     </span>
+                  </h4>
+               </div>
+               <div class="clearfix"></div>
+               <div class="delivery-opt">
+                  <span  class="ng-scope">
+                     <div class="clearfix ng-scope">
+                        <p> <i class="mdi mdi-truck"></i>
+                           <span class="delivery-text">Standard Delivery: Thursday Morning</span></p>
+                     </div>
+                  </span>
+                  <div class="clearfix hid-xs-mb"></div>
+               </div>
+               <div class="clearfix hid-xs-mb"></div>
+               <div class="bskt-opt display-inline">
+                  <div class="display-inline" >
+                     <div class="input-group display-inline-cl">
+                        <span class="input-group-addon">Qty</span> 
+                        <input [(ngModel)]="slide['qty']" type="text" class="input-width form-control" maxlength="5">
+                     </div>
+                  </div>
+                  <div class="">
+                     <button type="button" (click)="addCart(slide)" class="btn btn-secondary btn-sm float-right bskt-opt-button add_to_cart"
+                        >Add <i class="mdi mdi-basket"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>         
+               </a>
+            </div>      
+         </ng-template>
+       </ng-container>
+    
+     </owl-carousel-o>
+   </div> 
+
+</section>
+
+<section class="product-items-slider section-padding">
+   <div class="container">
+      <div class="section-header">
+         <h5 class="heading-design-h5">Featured Product
+            <!-- <span class="badge badge-primary">20% OFF</span> -->
+            <a class="float-right text-secondary" href="shop.html">View All</a>
+         </h5>
+      </div>
+   </div>
+      <div class="container">
+      <owl-carousel-o [options]="customOptions2">
+      <ng-container  *ngFor="let slide of featureProduct">
+         <ng-template carouselSlide [id]="slide.CategoryID">
+            <div class="product" style="max-width: 220px !important;">
+               <a >
+           <div class="product-header">
+            <span class="badge badge-success">50% OFF</span>
+            <img style="max-width: 200px !important;" (error)=error(slide) onMouseOver="this.style.opacity=0.4" onMouseOut="this.style.opacity=1"  [src]="slide.Product_Image" [alt]="slide.Category_Description" [title]="slide.Category_Description">
+            <!-- <img class="img-fluid" src="../../assets/img/item/1.jpg" alt=""> -->
+            <span class="veg text-success mdi mdi-circle"></span>
+         </div>
+         <div class="product-body">
+            <h5>{{slide.Product_MetaTitle}}</h5>
+            <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+         </div>
+         <div class="qnty-selection">
+            <div class="btn-group btn-input">
+               <span class="">
+               <button type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-caret-down"></i> 
+                  <span data-bind="label">
+                  <!-- <span class="">1 kg</span>  -->
+                  <span class="">{{slide.Product_SKU}}</span> - Rs 
+                  <span class="">{{slide.Product_SalePrice}}</span>
+               </span>
+               </button>
+                  <ul class="dropdown-menu drop-select">
+                           <li  class="ng-scope">
+                              <a href="#" style="text-decoration: none;">
+                              <span class="">1 kg</span> 
+                              <span class="">Pouch</span> - Rs 
+                              <span class="">115.00</span> 
+                              </a>
+                           </li>
+                     <li  class="ng-scope">
+                        <a href="#" style="text-decoration: none;">
+                        <span class="">500 g</span> 
+                        <span class="">Pouch</span> - Rs 
+                        <span class="">60.00</span> 
+                        </a>
+                     </li>
+                  </ul>
+               </span>
+            </div>
+         </div>
+         <div class="add-bskt">
+            <div class="elements">
+               <div qa="price" class="po-markup">
+                  <h5 class="po-link-addr ng-scope" data-original-title="" title="" >
+                     <span class="ng-binding">MRP: </span>
+                  </h5>
+                  <h4>
+                     <span class="mp-price ng-scope" >Rs 
+                        <span class="">{{slide.Product_MRP}}</span>
+                     </span>
+                     <span class="discnt-price"> Rs 
+                        <span class="ng-binding">{{slide.Product_SalePrice}}</span>
+                     </span>
+                  </h4>
+               </div>
+               <div class="clearfix"></div>
+               <div class="delivery-opt">
+                  <span  class="ng-scope">
+                     <div class="clearfix ng-scope">
+                        <p> <i class="mdi mdi-truck"></i>
+                           <span class="delivery-text">Standard Delivery: Thursday Morning</span></p>
+                     </div>
+                  </span>
+                  <div class="clearfix hid-xs-mb"></div>
+               </div>
+               <div class="clearfix hid-xs-mb"></div>
+               <div class="bskt-opt display-inline">
+                  <div class="display-inline" >
+                     <div class="input-group display-inline-cl">
+                        <span class="input-group-addon">Qty</span> 
+                        <input type="text" class="input-width form-control" maxlength="5">
+                     </div>
+                  </div>
+                  <div class="">
+                     <button type="button" class="btn btn-secondary btn-sm float-right bskt-opt-button add_to_cart"
+                        >Add <i class="mdi mdi-basket"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>         
+               </a>
+            </div>      
+         </ng-template>
+       </ng-container>
+    
+     </owl-carousel-o>
+   </div> 
+
+</section>
+
+
+
+<section class="product-items-slider section-padding">
+   <div class="container">
+      <div class="section-header">
+         <h5 class="heading-design-h5">New Product
+            <!-- <span class="badge badge-primary">20% OFF</span> -->
+            <a class="float-right text-secondary" href="shop.html">View All</a>
+         </h5>
+      </div>
+   </div>
+      <div class="container">
+      <owl-carousel-o [options]="customOptions2">
+      <ng-container  *ngFor="let slide of newProducts">
+         <ng-template  carouselSlide [id]="slide.CategoryID">
+            <div class="product" style="max-width: 220px !important;">
+               <a >
+         <div class="product-header">
+            <span class="badge badge-success">50% OFF</span>
+            <img style="max-width: 200px !important;" (error)=error(slide) onMouseOver="this.style.opacity=0.4" onMouseOut="this.style.opacity=1"  [src]="slide.Product_Image" [alt]="slide.Category_Description" [title]="slide.Category_Description">
+            <!-- <img class="img-fluid" src="../../assets/img/item/1.jpg" alt=""> -->
+            <span class="veg text-success mdi mdi-circle"></span>
+         </div>
+         <div class="product-body">
+            <h5>{{slide.Product_MetaTitle}}</h5>
+            <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+         </div>
+         <div class="qnty-selection">
+            <div class="btn-group btn-input">
+               <span class="">
+               <button type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-caret-down"></i> 
+                  <span data-bind="label">
+                  <!-- <span class="">1 kg</span>  -->
+                  <span class="">{{slide.Product_SKU}}</span> - Rs 
+                  <span class="">{{slide.Product_SalePrice}}</span>
+               </span>
+               </button>
+                  <ul class="dropdown-menu drop-select">
+                           <li  class="ng-scope">
+                              <a href="#" style="text-decoration: none;">
+                              <span class="">1 kg</span> 
+                              <span class="">Pouch</span> - Rs 
+                              <span class="">115.00</span> 
+                              </a>
+                           </li>
+                     <li  class="ng-scope">
+                        <a href="#" style="text-decoration: none;">
+                        <span class="">500 g</span> 
+                        <span class="">Pouch</span> - Rs 
+                        <span class="">60.00</span> 
+                        </a>
+                     </li>
+                  </ul>
+               </span>
+            </div>
+         </div>
+         <div class="add-bskt">
+            <div class="elements">
+               <div qa="price" class="po-markup">
+                  <h5 class="po-link-addr ng-scope" data-original-title="" title="" >
+                     <span class="ng-binding">MRP: </span>
+                  </h5>
+                  <h4>
+                     <span class="mp-price ng-scope" >Rs 
+                        <span class="">{{slide.Product_MRP}}</span>
+                     </span>
+                     <span class="discnt-price"> Rs 
+                        <span class="ng-binding">{{slide.Product_SalePrice}}</span>
+                     </span>
+                  </h4>
+               </div>
+               <div class="clearfix"></div>
+               <div class="delivery-opt">
+                  <span  class="ng-scope">
+                     <div class="clearfix ng-scope">
+                        <p> <i class="mdi mdi-truck"></i>
+                           <span class="delivery-text">Standard Delivery: Thursday Morning</span></p>
+                     </div>
+                  </span>
+                  <div class="clearfix hid-xs-mb"></div>
+               </div>
+               <div class="clearfix hid-xs-mb"></div>
+               <div class="bskt-opt display-inline">
+                  <div class="display-inline" >
+                     <div class="input-group display-inline-cl">
+                        <span class="input-group-addon">Qty</span> 
+                        <input type="text" class="input-width form-control" maxlength="5">
+                     </div>
+                  </div>
+                  <div class="">
+                     <button type="button" class="btn btn-secondary btn-sm float-right bskt-opt-button add_to_cart"
+                        >Add <i class="mdi mdi-basket"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>         
+               </a>
+            </div>      
+         </ng-template>
+       </ng-container>
+    
+     </owl-carousel-o>
+   </div> 
+
+</section>
+
+
+
+<section class="product-items-slider section-padding">
+   <div class="container">
+      <div class="section-header">
+         <h5 class="heading-design-h5">Trending Product
+            <!-- <span class="badge badge-primary">20% OFF</span> -->
+            <a class="float-right text-secondary" href="shop.html">View All</a>
+         </h5>
+      </div>
+   </div>
+      <div class="container">
+      <owl-carousel-o [options]="customOptions2">
+      <ng-container  *ngFor="let slide of trendingProducts">
+         <ng-template  carouselSlide [id]="slide.CategoryID">
+            <div class="product" style="max-width: 220px !important;">
+               <a >
+         <div class="product-header">
+            <span class="badge badge-success">50% OFF</span>
+            <img style="max-width: 200px !important;" (error)=error(slide) onMouseOver="this.style.opacity=0.4" onMouseOut="this.style.opacity=1"  [src]="slide.Product_Image" [alt]="slide.Category_Description" [title]="slide.Category_Description">
+            <!-- <img class="img-fluid" src="../../assets/img/item/1.jpg" alt=""> -->
+            <span class="veg text-success mdi mdi-circle"></span>
+         </div>
+         <div class="product-body">
+            <h5>{{slide.Product_MetaTitle}}</h5>
+            <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+         </div>
+         <div class="qnty-selection">
+            <div class="btn-group btn-input">
+               <span class="">
+               <button type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-caret-down"></i> 
+                  <span data-bind="label">
+                  <!-- <span class="">1 kg</span>  -->
+                  <span class="">{{slide.Product_SKU}}</span> - Rs 
+                  <span class="">{{slide.Product_SalePrice}}</span>
+               </span>
+               </button>
+                  <ul class="dropdown-menu drop-select">
+                           <li  class="ng-scope">
+                              <a href="#" style="text-decoration: none;">
+                              <span class="">1 kg</span> 
+                              <span class="">Pouch</span> - Rs 
+                              <span class="">115.00</span> 
+                              </a>
+                           </li>
+                     <li  class="ng-scope">
+                        <a href="#" style="text-decoration: none;">
+                        <span class="">500 g</span> 
+                        <span class="">Pouch</span> - Rs 
+                        <span class="">60.00</span> 
+                        </a>
+                     </li>
+                  </ul>
+               </span>
+            </div>
+         </div>
+         <div class="add-bskt">
+            <div class="elements">
+               <div qa="price" class="po-markup">
+                  <h5 class="po-link-addr ng-scope" data-original-title="" title="" >
+                     <span class="ng-binding">MRP: </span>
+                  </h5>
+                  <h4>
+                     <span class="mp-price ng-scope" >Rs 
+                        <span class="">{{slide.Product_MRP}}</span>
+                     </span>
+                     <span class="discnt-price"> Rs 
+                        <span class="ng-binding">{{slide.Product_SalePrice}}</span>
+                     </span>
+                  </h4>
+               </div>
+               <div class="clearfix"></div>
+               <div class="delivery-opt">
+                  <span  class="ng-scope">
+                     <div class="clearfix ng-scope">
+                        <p> <i class="mdi mdi-truck"></i>
+                           <span class="delivery-text">Standard Delivery: Thursday Morning</span></p>
+                     </div>
+                  </span>
+                  <div class="clearfix hid-xs-mb"></div>
+               </div>
+               <div class="clearfix hid-xs-mb"></div>
+               <div class="bskt-opt display-inline">
+                  <div class="display-inline" >
+                     <div class="input-group display-inline-cl">
+                        <span class="input-group-addon">Qty</span> 
+                        <input type="text" class="input-width form-control" maxlength="5">
+                     </div>
+                  </div>
+                  <div class="">
+                     <button type="button" class="btn btn-secondary btn-sm float-right bskt-opt-button add_to_cart"
+                        >Add <i class="mdi mdi-basket"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>         
+               </a>
+            </div>      
+         </ng-template>
+       </ng-container>
+    
+     </owl-carousel-o>
+   </div> 
+
+</section>
+
+
+<!-- 
+<section class="product-items-slider section-padding">
+   <div class="container">
+      <div class="section-header">
+         <h5 class="heading-design-h5">Top Savers Today <span class="badge badge-primary">20% OFF</span>
+            <a class="float-right text-secondary" href="shop.html">View All</a>
+         </h5>
+      </div>
+      <div class="owl-carousel owl-carousel-featured">
+         <div  class="item">
+            <div class="product">
+               <a >
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/1.jpg" alt="">
+                     <span class="veg text-success mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="qnty-selection">
+                     <div class="btn-group btn-input">
+                        <span class="">
+                        <button type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
+                           <i class="fa fa-caret-down"></i> 
+                           <span data-bind="label">
+                           <span class="">1 kg</span> 
+                           <span class="">Pouch</span> - Rs 
+                           <span class="">115.00</span>
+                        </span>
+                        </button>
+                           <ul class="dropdown-menu drop-select">
+                                    <li  class="ng-scope">
+                                       <a href="#" style="text-decoration: none;">
+                                       <span class="">1 kg</span> 
+                                       <span class="">Pouch</span> - Rs 
+                                       <span class="">115.00</span> 
+                                       </a>
+                                    </li>
+                              <li  class="ng-scope">
+                                 <a href="#" style="text-decoration: none;">
+                                 <span class="">500 g</span> 
+                                 <span class="">Pouch</span> - Rs 
+                                 <span class="">60.00</span> 
+                                 </a>
+                              </li>
+                           </ul>
+                        </span>
+                     </div>
+                  </div>
+                  <div class="add-bskt">
+                     <div class="elements">
+                        <div qa="price" class="po-markup">
+                           <h5 class="po-link-addr ng-scope" data-original-title="" title="" >
+                              <span class="ng-binding">MRP: </span>
+                           </h5>
+                           <h4>
+                              <span class="mp-price ng-scope" >Rs 
+                                 <span class="">170</span>
+                              </span>
+                              <span class="discnt-price"> Rs 
+                                 <span class="ng-binding">115</span>
+                              </span>
+                           </h4>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="delivery-opt">
+                           <span  class="ng-scope">
+                              <div class="clearfix ng-scope">
+                                 <p> <i class="mdi mdi-truck"></i>
+                                    <span class="delivery-text">Standard Delivery: Thursday Morning</span></p>
+                              </div>
+                           </span>
+                           <div class="clearfix hid-xs-mb"></div>
+                        </div>
+                        <div class="clearfix hid-xs-mb"></div>
+                        <div class="bskt-opt display-inline">
+                           <div class="display-inline" >
+                              <div class="input-group display-inline-cl">
+                                 <span class="input-group-addon">Qty</span> 
+                                 <input type="text" class="input-width form-control" maxlength="5">
+                              </div>
+                           </div>
+                           <div class="">
+                              <button type="button" class="btn btn-secondary btn-sm float-right bskt-opt-button add_to_cart"
+                                 >Add <i class="mdi mdi-basket"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>               
+               </a>
+            </div>
+         </div> -->
+         <!-- <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/2.jpg" alt="">
+                     <span class="non-veg text-danger mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/3.jpg" alt="">
+                     <span class="non-veg text-danger mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/4.jpg" alt="">
+                     <span class="veg text-success mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/5.jpg" alt="">
+                     <span class="veg text-success mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/6.jpg" alt="">
+                     <span class="veg text-success mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div> -->
+      <!-- </div>
+   </div> -->
+<!-- </section> -->
+<!-- <section class="offer-product">
+   <div class="container">
+      <div class="row no-gutters">
+         <div class="col-md-6">
+            <a href="#"><img class="img-fluid" src="../../assets/img/ad/1.jpg" alt=""></a>
+         </div>
+         <div class="col-md-6">
+            <a href="#"><img class="img-fluid" src="../../assets/img/ad/2.jpg" alt=""></a>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="product-items-slider section-padding">
+   <div class="container">
+      <div class="section-header">
+         <h5 class="heading-design-h5">Best Offers View <span class="badge badge-info">20% OFF</span>
+            <a class="float-right text-secondary" href="shop.html">View All</a>
+         </h5>
+      </div>
+      <div class="owl-carousel owl-carousel-featured">
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/7.jpg" alt="">
+                     <span class="veg text-success mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/8.jpg" alt="">
+                     <span class="non-veg text-danger mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/9.jpg" alt="">
+                     <span class="non-veg text-danger mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/10.jpg" alt="">
+                     <span class="veg text-success mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/11.jpg" alt="">
+                     <span class="veg text-success mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="item">
+            <div class="product">
+               <a href="single.html">
+                  <div class="product-header">
+                     <span class="badge badge-success">50% OFF</span>
+                     <img class="img-fluid" src="../../assets/img/item/12.jpg" alt="">
+                     <span class="veg text-success mdi mdi-circle"></span>
+                  </div>
+                  <div class="product-body">
+                     <h5>Product Title Here</h5>
+                     <h6><strong><span class="mdi mdi-approval"></span> Available in</strong> - 500 gm</h6>
+                  </div>
+                  <div class="product-footer">
+                     <button type="button" class="btn btn-secondary btn-sm float-right"><i class="mdi mdi-cart-outline"></i> Add To Cart</button>
+                     <p class="offer-price mb-0">$450.99 <i class="mdi mdi-tag-outline"></i><br><span class="regular-price">$800.99</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section-padding bg-white border-top">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-4 col-sm-6">
+            <div class="feature-box">
+               <i class="mdi mdi-truck-fast"></i>
+               <h6>Free & Next Day Delivery</h6>
+               <p>Lorem ipsum dolor sit amet, cons...</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+            <div class="feature-box">
+               <i class="mdi mdi-basket"></i>
+               <h6>100% Satisfaction Guarantee</h6>
+               <p>Rorem Ipsum Dolor sit amet, cons...</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-sm-6">
+            <div class="feature-box">
+               <i class="mdi mdi-tag-heart"></i>
+               <h6>Great Daily Deals Discount</h6>
+               <p>Sorem Ipsum Dolor sit amet, Cons...</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section> -->
